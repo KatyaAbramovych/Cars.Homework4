@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.form-element {
+        width: 400px;
+        padding: 20px;
+        border: 10px solid #ccc;
+        border-radius: 4px;
+        text-align: left;
+      }
+      .sub {
+        background-color: rgb(76, 216, 122);
+        color: rgb(3, 3, 3);
+        width: 140px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Реєстрація</h1>
+    <form method="post" action="" name="signup-form">
+      <div class="form-element">
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="form-element">
+        <label>Пароль</label>
+        <input type="password" name="password" required />
+      </div>
+      <div class="form-element">
+        <label>Підтвердження пароля</label>
+        <input type="Password" name="Password" required />
+      </div>
+      <button class="sub" type="submit" name="register" value="register">
+        Зареєструватися
+      </button>
+    </form>
+  </body>
+</html>
