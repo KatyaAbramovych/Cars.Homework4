@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Пошук</h1>
+    <form method="get" action="https://fom.in.ua/echo" name="signup-form">
+      <div>
+        <label>Тип кузова</label>
+        <input type="text" name="body type" required />
+      </div>
+      <div>
+        <label>Марка авто</label>
+        <input type="text" name="car brand" required />
+      </div>
+      <div>
+        <label>Країна виробник</label>
+        <input type="text" name="manufacturer country" required />
+      </div>
+      <div>
+        <label>Ціна (від)</label>
+        <input type="number" name="price form" min="0" required />
+      </div>
+      <div>
+        <label>Ціна (до)</label>
+        <input type="number" name="price to" min="0" required />
+      </div>
+      <div>
+        <label>Рік випуску (від)</label>
+        <input type="number" name="year of issue from" min="1990" max="2023" required />
+      </div>
+      <div>
+        <label>Рік випуску (до)</label>
+        <input type="number" name="year of issue to" min="1950" max="2023" required />
+      </div>
+      <p>Виберіть стан :</p>
+      <input type="checkbox" id="new" name="state" value="Нова">
+      <label for="new">Нова</label><br>
+      <input type="checkbox" id="used" name="state" value="Підтримана">
+      <label for="used"> Підтримана</label><br>
+      <input type="checkbox" id="beat" name="state" value="Бита">
+      <label for="beat"> Бита</label><br>
+      <input type="checkbox" id="credit" name="state" value="У кредиті">
+      <label for="credit"> У кредиті</label><br>
+      <input type="checkbox" id="not cleared" name="state" value="Нерозмитнена">
+      <label for="not cleared"> Нерозмитнена</label><br>
+      <input type="checkbox" id="cleared" name="state" value="Розмитнена">
+      <label for="cleared"> Розмитнена</label><br>
+      <input type="checkbox" id="first owner" name="state" value="Перший власник">
+      <label for="first owner"> Перший власник</label><br>
+   <p><label for="fuel types">Тип палива:</label></p>
+  <select name="fuel" id="fuel">
+  <option value="Бензин">Бензин</option>
+  <option value="Дизель">Дизель</option>
+  <option value="Природний газ">Природний газ</option>
+  <option value="Електрика">Електрика</option>
+</select>
+<p><label for="grearbox types">Тип коробки передач:</label></p>
+<select name="grearbox" id="grearbox">
+<option value="Порожна"></option>
+<option value="Механічна">Механічна</option>
+<option value="Автоматична">Автоматична</option>
+<option value="Природний газ">Роботизована</option>
+</select>
+</body>
+</html>
