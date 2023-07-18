@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +38,7 @@
         <label>Рік випуску (до)</label>
         <input type="number" name="year of issue to" min="1950" max="2023" required />
       </div>
-      <p>Виберіть стан :</p>
+      <h2>Виберіть стан :</h2>
       <input type="checkbox" id="new" name="state" value="Нова">
       <label for="new">Нова</label><br>
       <input type="checkbox" id="used" name="state" value="Підтримана">
@@ -52,12 +53,12 @@
       <label for="cleared"> Розмитнена</label><br>
       <input type="checkbox" id="first owner" name="state" value="Перший власник">
       <label for="first owner"> Перший власник</label><br>
-   <p><label for="fuel types">Тип палива:</label>
+   <h3><label for="fuel types">Тип палива:</label>
   <select name="fuel" id="fuel">
   <option value="Бензин">Бензин</option>
   <option value="Дизель">Дизель</option>
-  <option value="Природний газ">Природний газ</option></p>
-  <option value="Електрика">Електрика</option>
+  <option value="Природний газ">Природний газ</option>
+  <option value="Електрика">Електрика</option></h3>
 </select>
 <p><label for="grearbox types">Тип коробки передач:</label>
 <select name="grearbox" id="grearbox">
@@ -85,8 +86,8 @@
   <label for="Starting a car from a distance">Запуск автомобіля на відстані</label><br>
   <input type="checkbox" id="adaptive lighting" name="comfort" value="Адаптивне освітлення">
   <label for="adaptive lighting">Адаптивне освітлення</label><br>
-  <button class="sub" type="submit" name="search" value="search">Пошук
-  </button>
+  <p><button class="sub" type="submit" name="search" value="search">Пошук
+  </button></p>
 
 </body>
 </html>
