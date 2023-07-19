@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="./styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Пошук</h1>
     <form method="get" action="https://fom.in.ua/echo" name="search-form">
       <div>
@@ -39,55 +39,92 @@
         <input type="number" name="year_to" min="1950" max="2023" required />
       </div>
       <h2>Виберіть стан :</h2>
-      <input type="checkbox" id="new" name="state[]" value="Нова">
-      <label for="new">Нова</label><br>
-      <input type="checkbox" id="used" name="state[]" value="Підтримана">
-      <label for="used"> Підтримана</label><br>
-      <input type="checkbox" id="beat" name="state[]" value="Бита">
-      <label for="beat"> Бита</label><br>
-      <input type="checkbox" id="credit" name="state[]" value="У кредиті">
-      <label for="credit"> У кредиті</label><br>
-      <input type="checkbox" id="not_cleared" name="state[]" value="Нерозмитнена">
-      <label for="not_cleared"> Нерозмитнена</label><br>
-      <input type="checkbox" id="cleared" name="state[]" value="Розмитнена">
-      <label for="cleared"> Розмитнена</label><br>
-      <input type="checkbox" id="first_owner" name="state[]" value="Перший власник">
-      <label for="first_owner"> Перший власник</label><br>
-   <label for="fuel_types">Тип палива:</label>
-  <select name="fuel" id="fuel_types">
-  <option value="Бензин">Бензин</option>
-  <option value="Дизель">Дизель</option>
-  <option value="Природний газ">Природний газ</option>
-  <option value="Електрика">Електрика</option>
-</select>
-<label for="grearbox_types">Тип коробки передач:</label>
-<select name="grearbox" id="grearbox_types">
-<option value="Механічна">Механічна</option>
-<option value="Автоматична">Автоматична</option>
-<option value="Природний газ">Роботизована</option>
-</select>
-<div>
-    <label>Колір</label>
-    <input type="color" name="color" >
-  </div>
-  Комфорт:
-  <input type="checkbox" id="sunroof" name="comfort" value="Люк">
-  <label for="sunroof">Люк</label><br>
-  <input type="checkbox" id="leather_interior" name="comfort" value="Шкіряний салон">
-  <label for="leather interior"> Шкіряний салон </label><br>
-  <input type="checkbox" id="heated_seats" name="comfort" value="Бита">
-  <label for="heated seats">Сидіння з підігрівом</label><br>
-  <input type="checkbox" id="Soundproofing" name="comfort" value="Звукоізоляція">
-  <label for="Soundproofing">Звукоізоляція</label><br>
-  <input type="checkbox" id="Heated_wipers" name="comfort" value="Підігрів двірників">
-  <label for="Heated wipers"> Підігрів двірників</label><br>
-  <input type="checkbox" id="Starting_distance" name="comfort" value="Запуск автомобіля на відстані">
-  <label for="Starting a car from a distance">Запуск автомобіля на відстані</label><br>
-  <input type="checkbox" id="adaptive_lighting" name="comfort" value="Адаптивне освітлення">
-  <label for="adaptive lighting">Адаптивне освітлення</label><br>
-  <p><button class="sub" type="submit" name="search" value="search">Пошук
-  </button></p>
-  </form>
-
-</body>
+      <input type="checkbox" id="new" name="state[]" value="Нова" />
+      <label for="new">Нова</label><br />
+      <input type="checkbox" id="used" name="state[]" value="Підтримана" />
+      <label for="used"> Підтримана</label><br />
+      <input type="checkbox" id="beat" name="state[]" value="Бита" />
+      <label for="beat"> Бита</label><br />
+      <input type="checkbox" id="credit" name="state[]" value="У кредиті" />
+      <label for="credit"> У кредиті</label><br />
+      <input
+        type="checkbox"
+        id="not_cleared"
+        name="state[]"
+        value="Нерозмитнена"
+      />
+      <label for="not_cleared"> Нерозмитнена</label><br />
+      <input type="checkbox" id="cleared" name="state[]" value="Розмитнена" />
+      <label for="cleared"> Розмитнена</label><br />
+      <input
+        type="checkbox"
+        id="first_owner"
+        name="state[]"
+        value="Перший власник"
+      />
+      <label for="first_owner"> Перший власник</label><br />
+      <label for="fuel_types">Тип палива:</label>
+      <select name="fuel" id="fuel_types">
+        <option value="Бензин">Бензин</option>
+        <option value="Дизель">Дизель</option>
+        <option value="Природний газ">Природний газ</option>
+        <option value="Електрика">Електрика</option>
+      </select>
+      <label for="grearbox_types">Тип коробки передач:</label>
+      <select name="grearbox" id="grearbox_types">
+        <option value="Механічна">Механічна</option>
+        <option value="Автоматична">Автоматична</option>
+        <option value="Природний газ">Роботизована</option>
+      </select>
+      <div>
+        <label>Колір</label>
+        <input type="color" name="color" />
+      </div>
+      Комфорт:
+      <input type="checkbox" id="sunroof" name="comfort[]" value="Люк" />
+      <label for="sunroof">Люк</label><br />
+      <input
+        type="checkbox"
+        id="leather_interior"
+        name="comfort[]"
+        value="Шкіряний салон"
+      />
+      <label for="leather_interior"> Шкіряний салон </label><br />
+      <input type="checkbox" id="heated_seats" name="comfort" value="Бита" />
+      <label for="heated_seats">Сидіння з підігрівом</label><br />
+      <input
+        type="checkbox"
+        id="soundproofing"
+        name="comfort[]"
+        value="Звукоізоляція"
+      />
+      <label for="soundproofing">Звукоізоляція</label><br />
+      <input
+        type="checkbox"
+        id="heated_wipers"
+        name="comfort[]"
+        value="Підігрів двірників"
+      />
+      <label for="heated_wipers"> Підігрів двірників</label><br />
+      <input
+        type="checkbox"
+        id="starting_distance"
+        name="comfort[]"
+        value="Запуск автомобіля на відстані"
+      />
+      <label for="starting_distance">Запуск автомобіля на відстані</label><br />
+      <input
+        type="checkbox"
+        id="adaptive_lighting"
+        name="comfort[]"
+        value="Адаптивне освітлення"
+      />
+      <label for="adaptive_lighting">Адаптивне освітлення</label><br />
+      <p>
+        <button class="sub" type="submit" name="search" value="search">
+          Пошук
+        </button>
+      </p>
+    </form>
+  </body>
 </html>
